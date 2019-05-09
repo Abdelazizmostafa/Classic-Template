@@ -1,0 +1,443 @@
+/*====Start global====*/
+*{
+box-sizing: border-box;
+}
+body{
+font-family: 'montserrat', serif;   
+}
+.container {
+width: 1200px;
+margin: auto;
+}
+.clearfix{
+clear: both;
+}
+/*========End global========*/
+/*=========Start Nav-b======*/
+.nav-bar{
+height: 0;
+background-color: #DDD;
+font-size: 20px;
+position: relative;
+z-index: 1000;
+}
+.nav-bar .brand{
+color:#fff;
+text-transform: uppercase;   
+float: left;
+width: 50%;
+padding: 10px;
+}
+.brand h3{
+ letter-spacing:2px; 
+}
+.nav-bar .links{
+float: right;
+width:50%;
+}
+.nav-bar .links ul {
+list-style: none;
+padding-left: 0;  
+overflow: hidden;
+}
+.nav-bar .links ul li {
+float: left;
+padding: 10px 15px;
+}
+.nav-bar .links ul li a{
+text-decoration: none;
+color: #fff;
+font-size: 16px;
+}
+.nav-bar .links ul li.active a ,
+.nav-bar .links ul li a:hover{
+color:#24B79B;
+border-bottom:2px solid #24B79B;
+}
+/*========End Nav-bar========*/
+/*========start header========*/
+.header{
+background-image:url('../images/01.jpg');
+position: relative;
+}
+.header .overlay{
+background-color: rgb(0 ,0,0,.5);
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+/*test for two pro*/    
+width: 100%;
+height: 100%;   
+}
+.header .bx-wrapper{
+border: 0;
+background: none;
+box-shadow: none;
+}
+.header .bx-wrapper .bx-viewport{
+height: 100% !important;
+text-align: center;
+}
+.header .bxslider{
+height: 100%;
+color: #fff;
+}
+.header .bxslider li{
+display: block;
+ margin-top: -80px;
+}
+.header .bxslider li h2{
+font-size: 50px;
+margin-bottom: 10px;
+}
+.header .bxslider li span{
+color:#24B79B;
+}
+/*========End header========*/
+/*========start Services========*/
+.Services{
+padding: 50px 20px;
+}
+.Services h2{
+margin: 0 0 50px;
+text-transform: capitalize; 
+font-weight: normal;
+}
+.Services .items{
+float: left;
+width: 33.333%;
+margin-bottom:20px;  
+}
+.Services .items li{
+color:#24B79B; 
+float: left;
+width: 20%;
+margin-right: 5%; 
+margin-top: 10px;    
+}
+.Services .items .info {
+float: left;
+width: 75%;
+}
+.Services .items .info h3 {
+font-weight:normal;
+color: #555;    
+margin-bottom: 15px;    
+}
+.Services .items .info p {
+line-height: 1.5;
+margin-top: 0;
+color: #bdb7b7;
+}
+/*========End Services========*/
+/*========Start Our Team========*/
+.team{
+padding: 30px 20px 40px;
+}
+.team .box{
+float: left;
+}
+.team .box:first-child{
+width: 35%;
+}
+.team .box:not(:first-child){
+width: 14%;
+margin-left:1%;
+position: relative;    
+}
+.team .box:not(:first-child) img{
+width:100%;
+}
+.team .box:not(:first-child) .overlay{
+position: absolute;
+top:0;
+left: 0;
+right: 0;
+bottom: 0;
+width: 100%;
+height: 100%;
+font-size:20px;
+line-height: 183px;
+text-align: center;
+color: #fff;    
+background-color: #24B79B;
+transition: all 1s ease-in-out;
+opacity: .7;
+display: none;
+}
+.team .box:not(:first-child):hover .overlay{
+display: block;
+}
+.team .box h2{
+padding: 0 0 15px;
+text-transform: capitalize; 
+font-weight: normal;
+}
+.team .box p {
+line-height: 1.5;
+color: #bdb7b7;
+} 
+/*=============End Our Team=================*/
+/*============Start TESTEMONIALS============*/
+.testemonials{
+background: url("../images/Page-Banner-Testimonial-2.jpg");
+background-size: cover; 
+position: relative;
+height: 400px;
+text-align: center;
+padding: 80px 0 ; 
+}
+.testemonials .t-overlay{
+position: absolute;
+top:0;
+left: 0;
+right: 0;
+bottom: 0;
+width: 100%;
+height: 100%;
+color: #fff;
+background-color: #000;
+opacity: 0.8;
+}
+.testemonials h2 {
+font-size: 30px;
+margin: 60px 0 ;    
+}
+.testemonials q{
+font-size: 20px;
+line-height:1.5;
+display: block;
+margin-top: 100px;    
+}
+.testemonials p{
+font-size: 25px;
+margin-top: 40px;    
+color: #24B79B;
+}
+.testemonials .slider >div{
+display:none;
+}
+.testemonials .slider .active {
+display: block;
+}
+/*==============End TESTEMONIALS============*/
+/*==============start Protofilo============*/
+.projects{
+padding: 60px 0 ;
+}
+.projects h2 {
+font-size: 30px;
+margin: 30px 0 ;
+font-weight: normal;
+}
+.projects ul {
+list-style: none;
+padding-left: 0;  
+overflow: hidden;
+margin-left: 1.5%;
+margin-bottom: 3%;    
+}
+.projects ul li {
+float: left;
+padding: 10px 15px;
+margin-right: 14px;
+border-radius: 8px;    
+border: 1px solid #bdb7b7;
+color: #bdb7b7;    
+}
+.projects ul li.selected{
+color: #fff;
+background-color:#24B79B;
+border: 1px solid #24B79B;
+}
+.projects .shuffle li {
+cursor: pointer;
+}
+.projects .pics{
+float: left;
+width: 30.333%;
+margin-right: 1.5%;
+margin-left: 1.5%; 
+position: relative;
+}
+.projects .pics img{
+width: 100%;
+}
+.projects .pics .poverlay{
+position: absolute;
+top:0;
+left: 0;
+right: 0;
+bottom: 0;
+width: 100%;
+height: 100%;
+font-size:18px;
+text-align: center;
+color: #fff;    
+background-color: #24B79B;
+transition: all 1s ease-in-out;
+opacity: .8;
+display: none;
+}
+.projects .pics:hover .poverlay{
+display: block;
+}
+.projects .pics .poverlay button{
+font-size: 18px;
+border: 1px solid #fff;
+background: none;
+color: #fff;    
+width: 150px;
+height: 50px;
+display: block;
+margin: 80px auto;
+text-align: center;    
+}
+.projects .pics .poverlay .heart{
+position: absolute;
+bottom: 20px;
+right: 20px;
+}
+/*==============End Protofilo============*/
+/*============Start Footer================*/
+.footer{
+background-color: #232323;
+padding: 30px 0 ;
+color: #6c6c6c;
+overflow: hidden;
+}
+.footer .col {
+width: 25%;
+float: left;  
+}
+.footer .col h2{
+font-size: 20px;
+color: #fff;
+font-weight: normal;
+}
+.footer .col p {
+text-align: left;
+line-height: 1.6;
+padding-top: 20px;    
+}
+.footer .col .socialicons {
+list-style: none;
+padding-left: 0;  
+overflow: hidden;
+margin-bottom: 20px;
+margin-top: 20px;
+}
+.footer .col .socialicons li {
+float: left;
+padding: 20px 0;
+margin-left: 0;    
+color: #6c6c6c; 
+}
+.footer .col .socialicons li:hover{
+cursor: pointer;
+color:  #24B79B;    
+}
+.footer .col .t-box{
+padding-top: 20px;    
+}
+.footer .col .t-box span {
+display: inline-block;
+color:#b1abab;    
+padding: 10px 5px;
+border: 1px solid #6c6c6c;
+margin-right: 5px;
+margin-bottom: 10px;    
+}
+.footer .col .post img{
+float: left;
+margin-right: 10px;    
+}
+.footer .col .post{ 
+color:#b1abab; 
+font-weight: normal;
+font-size: 13px;    
+}
+.footer .col .post h5{
+font-weight: normal;
+font-size: 15px;
+color:#ded4d4;
+margin-bottom: 15px;    
+}
+.footer .col .Categ{
+list-style: none;
+padding-left: 0;  
+overflow: hidden;
+}
+.footer .col .Categ li {
+padding: 10px 5px;
+border-bottom: 1px solid #6c6c6c;
+color: #ded4d4;    
+} 
+.footer .copyright{
+margin-top: 30px;
+}
+.footer .copyright span strong {
+color:  #24B79B;
+font-weight: normal;    
+}
+/*============Start Footer================*/ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*============Start Our Framework===========*/
+
+.special-heading{
+position: relative;
+
+}
+.special-heading:after{
+
+content: "";
+position: absolute;
+display: block;    
+left: 0;
+top:30px;
+width:40px;
+border: 2px solid #24B79B;    
+}
+.custom-line{
+margin: 40px 0;
+border: 1.5px solid #bdb7b7;    
+display: block;
+}
+
+
+.selected{
+color: #fff;
+background-color:#24B79B;
+border: 1px solid #24B79B;
+}
+
+/*============End Our FrameWork==============*/
+
+
+
+
+
+
+
+
+
